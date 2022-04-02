@@ -11,15 +11,6 @@
 
 <br> <br> <br> <br>
 
-<!-- <div class="carousel-inner">
-    <div class="carousel-item active">
-      <center><img src="images/702.jpg" class="rounded mx-auto d-block " alt="..." width="1250" height="400"></center>
-    <div class="carousel-caption text-right">
-        <h1>Parenting Tips!</h1>
-     
-      </div>
-    </div>
-    </div> -->
 <center><h1><i class="fas fa-pen-fancy"> Parenting Tips! </i></h1></center>
 <br>
 
@@ -152,7 +143,7 @@
 						Using Discipline and Consequences</h5>
 					<p class="card-text" style="color: black;">It's all fun and games until the sippy cup
 						hits the floor..for the hundredth time. Join a mother in search of
-						ways to deal constructively with her daughter'€™s misbehavior.</p>
+						ways to deal constructively with her daughter'ï¿½ï¿½s misbehavior.</p>
 				</div>
 			
     </div>
@@ -166,7 +157,7 @@
 						style="color: black; font-family: cursive;">Learn About
 						Using Discipline and Consequences</h5>
 					<p class="card-text" style="color: black;">Learn about constructive, effective ways
-						to use consequences and discipline to improve your child'€™s
+						to use consequences and discipline to improve your child'ï¿½ï¿½s
 						behavior.</p>
 				</div>
 			

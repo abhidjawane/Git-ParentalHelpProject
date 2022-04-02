@@ -72,7 +72,6 @@
 
 				<form action="drList" method="get">
 					<div>
-						<!--  <input type="date" id="loc" name="appdate" value="" placeholder="" tabindex="3" required="required" />  -->
 						<input type="hidden" name="ptid" value="${user.ptId}" readonly />
 						<button class="btn btn-sm btn-white mr-3  text-white"
 							type="submit">

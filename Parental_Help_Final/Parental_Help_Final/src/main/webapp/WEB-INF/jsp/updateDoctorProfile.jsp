@@ -107,14 +107,14 @@ if(session.getAttribute("my-auth")==null)
 						<div class="form-group">
 							Experience <input name="drExperience"
 								class="form-control form-control-sm" type="text"
-								value="${doctor.drExperience}" pattern="[1-2]{1,2}" required
+								value="${doctor.drExperience}" pattern="[0-9]{1,2}" required
 								autocomplete="off" title="only numbers are allowed" />
 						</div>
 
 						<div class="form-group">
 							Fees <input name="drFees"
 								class="form-control form-control-sm" type="text"
-								value="${doctor.drFees}" pattern="[0-9]" required
+								value="${doctor.drFees}" pattern="[0-9]{1,4}" required
 								autocomplete="off" title="only numbers are allowed" />
 						</div>
 
@@ -138,14 +138,7 @@ if(session.getAttribute("my-auth")==null)
 								title="only 15 characters & numbers allowed" />
 						</div>
 					
-						<!-- <div class="mt-2">
-							<input class="btn btn-secondary btn-block" type="submit"
-								value="Save" />
-						</div>
-						<div class="mt-2 mb-3">
-							<input class="btn btn-secondary btn-block" type="reset"
-								value="Cancel" />
-						</div> -->
+					
 						<div class="form-row mt-3">
 					<button type="submit"
 						class="btn btn-outline-secondary btn-sm col-md-6">Save</button>

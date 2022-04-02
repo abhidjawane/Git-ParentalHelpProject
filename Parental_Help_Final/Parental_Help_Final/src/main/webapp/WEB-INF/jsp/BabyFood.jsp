@@ -13,39 +13,6 @@
 
 <br> <br> 
 
-
-
-<!-- <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="images/501.jpg" class="d-block w-100" alt="..." width="1450" height="600">
-    <div class="carousel-caption text-left">
-        <h1>First Food:</h1>
-        <p><h2>When To Start, <br> What to Feed,<br>And How To Make it Fun..!<h2></p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="images/502.jpg"class="d-block w-100" alt="..." width="1450" height="600">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="images/504.jpg" class="d-block w-100" alt="..." width="1450" height="600">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-      </div>
-    </div>
-  </div>
- 
-</div> -->
 <br> <br> 
 <div>
 <center>

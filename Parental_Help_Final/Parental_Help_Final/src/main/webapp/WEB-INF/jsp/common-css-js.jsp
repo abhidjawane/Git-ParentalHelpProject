@@ -37,7 +37,7 @@
 	crossorigin="anonymous" />
 
 <link href="images/babycare.jpg" rel="shortcut icon"/>
-<title>BabyCare</title>
+<title>ParentalHelp</title>
 </head>
 <body>
 

@@ -7,7 +7,7 @@
 <head>
 
 <meta charset="ISO-8859-1">
-<link href="images/babycare.jpg" rel="shortcut icon"/>
+<link href="images/ph.jpg" rel="shortcut icon"/>
 <title>Forget Password</title>
 <link rel="stylesheet"
 	href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"

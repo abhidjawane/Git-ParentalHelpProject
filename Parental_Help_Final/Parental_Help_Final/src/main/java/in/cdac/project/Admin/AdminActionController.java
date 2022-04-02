@@ -1,5 +1,6 @@
 package in.cdac.project.Admin;
 
+import java.lang.ProcessBuilder.Redirect;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -26,12 +27,12 @@ public class AdminActionController {
 		String adminusername = "Admin";
 		String adminpassword = "Admin@123";
 		if ((adminusername.equals(admUsername)) && (adminpassword.equals(admPassword))) {
-			ModelAndView mv = new ModelAndView("babyname_list");
-//			List<BabyName> babyname = babyNameService.getAllBabyName();
-//			mv.addObject("babyname", babyname);
-//			HttpSession httpSession = req.getSession();
-//			httpSession.setAttribute("my-auth", 1);
-			return mv;
+			ModelAndView mv = new ModelAndView("babysitter_list");
+
+			HttpSession httpSession = req.getSession();
+			httpSession.setAttribute("my-auth", 1);
+			System.out.println("Admin login Successfully");
+			return new ModelAndView("redirect:/list");
 		
 
 		} else {

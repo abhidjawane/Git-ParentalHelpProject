@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
  <link href="<c:url value="/css/newlogin.css" />" rel="stylesheet">
- <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" > -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
 </head>
 <body>
 <div class="container" id="container">
@@ -24,17 +24,17 @@
 			<input class="mt-2" type="text" name="clAdd" placeholder="Hospital/Clinic Address" required autocomplete="off"/>
 			
 			
-			<input type="text" name="drSpec" placeholder="Speciality" pattern="[A-Za-z\s]{1,40}"  required autocomplete="off" title="Only characters are allowed.."/>
+			<!-- <input type="text" name="drSpec" placeholder="Speciality" pattern="[A-Za-z\s]{1,40}"  required autocomplete="off" title="Only characters are allowed.."/> -->
 			
 			
-			<!-- <select class="form-control mt-2" aria-label="Default select example"  name="drSpec"  required>
+			<select class="form-control mt-2 " aria-label="Default select example"  name="drSpec"  required autocomplete="off">
 				<option selected disabled>select Speciality</option>
 				<option id="1" value="Pedriatrician">Pedriatrician</option>
 				<option id="2" value="Dentist">Dentist</option>
 				<option id="3" value="Eye Doctor">Eye Doctor</option>
 				<option id="4" value="Allergist">Allergist</option>
 				<option id="5" value="Dermatologist">Dermatologist</option>
-			  </select> -->
+			  </select>
 	
 			<input class="mt-2" type="text" name="drExperience" placeholder="Experience (in Years)" pattern="[0-9]{1,2}"  required autocomplete="off" title="Only numbers are allowed.."/>
 			<input class="mt-2"  type="text" name="drFees" placeholder="Fees (In Rs.)" pattern="[0-9]{1,4}"  required autocomplete="off" title="Only numbers are allowed.."/>
@@ -69,14 +69,14 @@
 			<button class="btn btn-success">Sign In</button>
 		</form>
 	</div>
-	<div class="overlay-container">
+	<div class="overlay-container " >
 		<div class="overlay" >
-			<div class="overlay-panel overlay-left">
+			<div class="overlay-panel overlay-left" >
 				<h1>Welcome Back!</h1>
 				<p>To keep connected with us please login with your personal info</p>
 				<button class="btn btn-success" id="signIn">Sign In</button>
 			</div>
-			<div class="overlay-panel overlay-right">
+			<div class="overlay-panel overlay-right" >
 				<h1>Hello, doctor!</h1>
 				<p>Enter your personal details and start journey with us</p>
 				<button  class="btn btn-primary mt-2" id="signUp">Sign Up</button>

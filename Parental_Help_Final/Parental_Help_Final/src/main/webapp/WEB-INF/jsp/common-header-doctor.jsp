@@ -38,7 +38,7 @@
 			class="navbar navbar-expand-md navbar-dark fixed-top row bg-dark ">
 			<a class="navbar-band font-weight-bold ml-3" href="#"><img
 				style="border-radius: 50%; width: 50px; height: 50px;"
-				src="/images/babycare.jpg" /> </a>
+				src="/images/ph.jpg" /> </a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse"
 				data-target="#navbarCollapse" aria-controls="navbarCollapse"
 				aria-expanded="false" aria-label="Toggle navigation">

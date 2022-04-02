@@ -44,8 +44,6 @@ public class DoctorActionController {
 			Doctors doctor = new Doctors(drName, clName, clAdd, drSpec, drExperience, drFees, drGmail, drMobile, drUsername, encrpPassUser,
 					false);
 			
-			
-			
 			doctorService.createDr(doctor);
 
 			mailSenderService.sendSimpleEmail(drGmail, "Dear Dr. " + drName+"," +"\n"+"\n"

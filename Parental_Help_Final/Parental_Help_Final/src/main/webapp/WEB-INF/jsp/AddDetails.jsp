@@ -58,32 +58,13 @@
 </head>
 
 <body>
-
-	<!-- 
-	<div class="row bg-success " style="height: 70px">
-		<div class=" d-none d-flex justify-content-center align-items-center">
-
-			<a class="navbar-band ml-5" href="/home"><img
-				style="border-radius: 50%; width: 50px; height: 50px;"
-				src="/images/Babycare.jpg" /> </a> <a
-				class="btn btn-sm btn-white ml-3" href="/babynamelist" role="button">BabyNames</a>
-			<a class="btn btn-sm btn-white ml-3" href="/list" role="button">BabySitters</a>
-			<a class="btn btn-sm btn-white ml-3" href="/vaccinationlist"
-				role="button">Vaccination</a> <a class="btn btn-sm btn-white ml-3"
-				href="/inquirylist" role="button">Inquiries</a> <a
-				class="btn btn-sm btn-white mr-3" href="/home" role="button">
-				Logout </a>
-		</div>
-
-	</div>
- -->
 	<header>
 
 		<nav
 			class="navbar navbar-expand-md navbar-dark fixed-top row bg-dark ">
 			<a class="navbar-band font-weight-bold ml-3" href="#"><img
 				style="border-radius: 50%; width: 50px; height: 50px;"
-				src="/images/babycare.jpg" /> </a>
+				src="/images/ph.jpg" /> </a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse"
 				data-target="#navbarCollapse" aria-controls="navbarCollapse"
 				aria-expanded="false" aria-label="Toggle navigation">
@@ -104,7 +85,8 @@
 					<li class="navbar-band font-weight-bold ml-3 active"><a
 						class="nav-link" href="/vaccinationlist"><i
 							class="fas fa-prescription-bottle-alt "> Vaccination</i></a></li>
-					
+					<li class="nav-item active"><a
+								class="nav-link navbar-band font-weight-bold ml-3" href="">Doctor</a></li>
 
 				</ul>
 				<ul class="navbar-nav   justify-content-end">
