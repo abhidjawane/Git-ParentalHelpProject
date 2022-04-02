@@ -1,9 +1,0 @@
-insert into inquiry values(1, 'I want to know the exact location of babysitter Pushpa Shinde,i was not able to find them', 'nirajkumar@gmail.com', 9890789686, 'babysitter location not found', 'Niraj Kumar');
-
-insert into inquiry values(2, 'I tried contacting Dr. Raj kothari but their contact information given is incorrect,i was not able to call him ', 'rocky32r@gmail.com', 7897657876, 'incorrect doctor contact information ', 'Achilesh Khandwe');
-
-insert into inquiry values(3, 'Can you provide me some more clearity on the information about Tdp vaccine ', 'srubanik234@gmail.com', 7778899646, 'Vaccination details provided are not clear', 'Srujan Kamble');
-
-insert into inquiry values(4, 'I want to book an appointment with gynaecologist Kale Madam,i was not able to contact her', 'shiv4444@gmail.com', 9900887766, 'Could not book appointment with doctor', 'Shivraj Sinha');
-
-insert into inquiry values(5, 'Help me with the vaccination,i dont find any vaccination centre in my area', 'isha123@yahoo.com', 9900665544, 'vaccination cannot found', 'Isha Shende');
