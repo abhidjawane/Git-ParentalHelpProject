@@ -1,0 +1,38 @@
+
+
+insert into vaccination values('1', 'Birth', 'Public Health Department NMC' ,'Near by primary health care','08/08/2021','provides immunity or protection against tuberculosis ', 'Bacillus Calmette–Guérin (BCG)',  '01.05PM-01.45PM'
+);
+
+insert into vaccination values('2', '6 months','Udaan Welfare Foundation',  'Near by primary health care','12/01/2020','Influenza(flu), which can cause pneumonia', 'InfluenzaOPV',  '01.10PM-01.45PM'
+);
+insert into vaccination values('3', '12 months',  'Smile Foundation' ,'Near by Z.P High School','03/05/2020', 'Hepatitis A, which can lead to liver failure','Hepatitis A (Hep A1)', '03.10PM-03.45PM' 
+);
+
+
+insert into vaccination values('4', '13-15 months	', 'Ministry of Health','Near by District Hospital.' ,'23/07/2020', 'Measles, which can lead to brain swelling, pneumonia, and death', 'Measles, Mumps, and Rubella (MMR 2)', '10.10AM-11.45AM'
+);
+
+
+insert into vaccination values('5', '16 to 18 months', 'HelpAge India', 'Near by primary health care', '30/09/2020',' Tetanus, which can lead to painful muscle spasms, breathing trouble, and death\n Diphtheria, which can lead to heart muscle swelling, heart failure, coma, paralysis, and death\n Pertussis, which can cause pneumonia, seizures, and death','Diphtheria, Perussis, and Tetanus (DTP B1)',  '12.10PM-12.45PM'
+);
+
+
+insert into vaccination values('6', '4 to 6 years','Rural Health Care Foundation','Near by district hospital', '07/11/2020', ' Tetanus, which can lead to painful muscle spasms, breathing trouble, and death\n Diphtheria, which can lead to heart muscle swelling, heart failure, coma, paralysis, and death\n Pertussis, which can cause pneumonia, seizures, and death', 'Diphtheria, Perussis, and Tetanus (DTP B2)' ,'10.20AM-11.00AM'
+);
+
+
+insert into vaccination values('7', '9 to 14 years','Ministry of Health' , 'Near by Z.P High School', '17/01/2021', ' Tetanus, which can lead to painful muscle spasms, breathing trouble, and death\n Diphtheria, which can lead to heart muscle swelling, heart failure, coma, paralysis, and death\n Pertussis, which can cause pneumonia, seizures, and death' , 'Tdap','02.10PM-02.45PM'
+);
+
+
+insert into vaccination values('8', '15 to 18 Years', 'Udaan Welfare Foundation', 'Near by primary health care', '19/05/2021',  'A booster dose every 10 years', 'Td','11.20AM-11.50AM'
+);
+
+
+insert into vaccination values('9', '15 to 18 Years', 'HelpAge India', 'Near by Z.P High School' ,'08/07/2021',' protection against a serious liver disease. ' , 'Hepatitis A','01.20PM-01.50PM')
+;
+
+
+
+insert into vaccination values('10', '11 months', 'Ministry of Health', 'Near by district hospital', '12/10/2021', 'provides immunity or protection against  potentially life-threatening liver infection ', 'Hepatits B ', '11.10AM-11.45AM'
+);

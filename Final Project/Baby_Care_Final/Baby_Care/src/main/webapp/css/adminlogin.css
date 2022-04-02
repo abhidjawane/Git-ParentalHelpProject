@@ -1,0 +1,149 @@
+
+
+.wrap{
+
+width:450px;
+	margin:auto;
+	padding:10px;
+	margin-top:30px;
+}
+.container
+{
+	overflow:auto;
+	 padding:0px;
+	
+}
+
+form {
+  border: 3px   solid #f1f1f1;
+}
+
+h1{
+	text-transform:uppercase;
+	text-align:center;
+	font-weight:bold;
+	
+}
+
+
+h2{
+	text-transform:uppercase;
+	text-align:center;
+	font-weight:bold;
+	
+}
+h4{
+	text-transform:uppercase;
+	text-align:center;
+	font-weight:bold;
+
+}
+label{
+	font-size:18px;
+	text-transform:uppercase;
+}
+.form-group{
+	margin-top:23px;
+	
+
+}
+
+.para{
+	width:450px;
+	margin:auto;
+	padding:20px;
+	margin-top:25px;
+	border:1px solid white;
+	font-size:18px;
+	
+}
+
+
+.babyname{
+	
+	width:350px;
+	margin:auto;
+	padding:30px;
+	margin-top:50px;
+}
+
+.logout{
+	text-transform:uppercase;
+	text-align:center;
+	font-weight:bold;
+	font-size:50px;
+	margin-top:90px;
+	color:gray;
+}
+
+h3{
+	font-weight:bold;
+	text-transform:uppercase;
+	}
+	
+ .babyfood{
+ 
+ font-size:23px;
+ text-transform:uppercase;
+
+ }
+ 
+ 
+ .food{
+ 
+ font-weight:bold;
+ text-align:center;
+ 
+ }
+ 
+ 
+ .par{
+ 
+ font-size:18px;
+ 
+ }
+ 
+ 
+ .list{
+ 
+ font-size:18px;
+ margin-left:55px;
+ 
+ }
+ 
+ 
+ 
+.btn{
+	
+	text-transform:uppercase;
+	margin:6px;
+}
+ 
+.hr{
+	border:0;
+	height:1px;
+	background:linear-gradient(to right,skyblue,yellow,green);
+	
+}
+ #MuslimReligion{
+ 
+ display:none;
+ }
+
+ #SikhReligion{
+ display:none;
+ 
+ }
+ 
+ #christianReligion{
+ 
+ display:none;
+ }
+ .images{
+
+width:100%;
+}
+ 
+ 
+ 
+ 

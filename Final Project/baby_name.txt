@@ -1,0 +1,19 @@
+insert into baby_name values(1,'one Who completes dreams ' ,'Swapnil' , 'Boy	');
+insert into baby_name values(2,'one who is lucky' ,'Shubham' , 'Boy	');
+insert into baby_name values(3,'unity' ,'Ekta' , 'Girl	');
+insert into baby_name values(4,'progress' ,'Vikas' , 'Boy	');
+insert into baby_name values(5,'soft' ,'Shital' , 'Girl');
+insert into baby_name values(6,'Hardworker' ,'Kamlesh' , 'Boy	');
+insert into baby_name values(7,'A servant of god' ,'Abdallah' , 'Boy	');
+insert into baby_name values(8,'Variable' ,'Gaery' , 'Boy	');
+insert into baby_name values(9,'One who is powerful' ,'Valencia' , 'Boy	');
+insert into baby_name values(10,'worship' ,'Pooja' , 'Girl	');
+insert into baby_name values(11,'First sikh guru' ,'	Naanak' , 'Boy	');
+insert into baby_name values(12,'A guide to righteousness' ,'Haadiya	' , 'Girl	');
+
+			
+
+
+
+
+

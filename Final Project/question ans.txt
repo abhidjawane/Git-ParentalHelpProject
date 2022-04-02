@@ -1,0 +1,282 @@
+Project Preparation Questionnaire
+-------------------------------------
+
+1.Describe the problem statement of your Project briefly.
+Finding the best healthcare is all we need for our newborn as so as to 
+fulfill the requirement we came up with this idea which will connect users 
+who are in search of healthcare services to the healthcare professionals directly.
+apart from that  our platform is having different services including baby-names for 
+your newborn child ,baby-care products ,babysitters if you need assistance,healthcare 
+professionals such as doctors and finally we also have Vaccination centers listed on our 
+portal which will help you find nearest services you require around you.
+
+2.Describe your Role in Project. (IMPORTANT)
+We did the planning of our project together and while development we divided the tasks equally.My work was to create functionalities of babysitter ,In that I did everything starting from backend database to frontend also i created a static page named must watch videos,apart from this the report work was assigned to me.
+
+
+
+3.Mention the Technology used in Project.
+Backend: springboot
+frontend: jsp,html,css,bootstrap 4.6,javascript(regstraion,login page)
+database: Mysql
+
+4.What are the objectives of your project?
+The main idea of this project is to provide  Childcare Services at
+ your ease and also on your doorstep, by providing  trusted quality products
+ and professionals .One stop for all your baby’s care.Our aim is to  connect  
+customers to professionals with ease ,also providing required healthcare products at their doorstep.
+
+
+5.Who are the target beneficiary of your project?
+This platform connect users who are in search of healthcare services 
+to the healthcare professionals directly.apart from that  our platform 
+is having different services including baby-names for your newborn child ,
+baby-care products ,babysitters if you need assistance,healthcare professionals
+ such as doctors and finally we also have Vaccination centers listed on our portal
+ which will help you find nearest services you require around you.
+
+
+6.How you all done the project module distribution?
+at the time of project topic  finalization we altogether did 
+the requirement analysis and after finalizing the topic our project leader
+ divided the task to be done to each member
+
+
+
+
+7.As a leader which are the project leader qualities are?
+Communication
+Honesty
+Relationship building
+Decisiveness
+Innovation
+Responsibility
+Motivation
+
+
+
+8.As a Team members what should be the role towards Project leader?
+we do all the task assign by project leader and trying to complete in time. also continuously coordinate with project leader
+
+
+
+9.Any issue or discrepancy in the project where you disagree?
+we are trying to achieve time base appointment booking funtionality , but due to time constraint we are not able to implement it. 
+
+
+
+10.Have you used any Software Life cycle Model in your project?
+Agile :-
+We followed Agile methodology in our project which is a practice that promotes continuous iteration of development and testing throughout the development of the project.We used to take suggestion of our project guide on regular basis and based on their review we used to make changes accordingly. In this project did both development and testing activities are concurrently.
+
+
+13.Have you used any OOPs concepts in your Project?
+we use all four pilors of oop's in our project- 
+1.encapsulation-by creation of entity class we achieve encapsulation in which all the data member are private and we access them by using getter setter method.
+2.abstraction- by creation of service intrface we achieve abstraction we declear abstract method in interface and these method define inside service implementation class.
+3.inheritance-by extending jpa repository in repository class and by implementing service interface in service implementation class we achive inheritance.
+4.polymorphism-calling method of a class by creating object of that class we achieve polymorphism.      
+
+
+14.Have you used any APIs in your project?
+Yes,we have use API for sending email and for achieving functionalities of our project 
+
+ 
+
+15.Have you used any Payment Gateway in your Project?
+No
+
+16.Any errors that you face during project?
+yes, we face many error like integreating frontend with backend ,overlapping problem in bootstrap version, accessing data from two tables   
+
+17.What are the plus point of your team?
+dedication to team work, unanimous decisions, punctual, fun loveing 
+ 
+
+18.What is the minus point of your team?
+When we used to work on any module we were not letting go of the work unless its done,so it caused us a lot of exertion
+
+
+
+19.Have you use any Business Model in Project?
+one-to-one b2c(business to consumer) model
+
+
+20.Draw the architecture of your project.
+presentation layer(ui)
+logical layer(backend)
+data layer(database)
+
+
+
+21.Design flow diagram for your project.
+
+
+24.Which UML Diagrams you have designed and why?
+class Digram, use-case digram, sequence digram, activity digram
+
+
+
+
+26.Explain the ER diagram of your project.
+
+
+
+27.Explain Tables with its relationship.
+
+
+28.Normalization is applicable to your project? (Yes/no). If so up to what level.
+normalization is applicable upto 3nf in our project. in our project database no one table contaion atomic values all tables have primary key and no transaction dependencies exist.
+
+
+
+29.Describe database connection of your project?
+we use spring boot so in application.properties file we provide 
+spring.datasource.url=jdbc:mysql://localhost:3306/babycare
+spring.datasource.username=root
+spring.datasource.password=root
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+
+31.Already so many applications are in market, how your application is different from market applications?
+Yes,There are various applications similar to our system but none of them provide all the functionalities  all at one place. Also major childcare websites like firstcry deals with only shopping of baby products
+
+
+
+33.What all testing you all have done?
+only manuel testing
+
+
+34.Can you mention any test case from the project?
+while registering user or doctor we set unique contraint for username, gmail and password. if we give repetative values then it throws exception. we test it and handle it.
+
+
+35.Explain your testing methodology with its type?
+Testing Methodologies are Unit Testing, Integration Testing, System Testing, Performance Testing etc.
+we did testing manually
+
+
+
+36.Give example for Unit testing done your project?
+37.Give example for System testing done your project?
+38.Give example for Data driven testing done your project?
+39.Give example for Load testing done your project?
+
+
+40.Is there any feature you have planned but not able to complete it?
+we are planning for time slot booking appointment but we are not able to implement it.
+
+
+
+
+42.limitation of project?
+we are planning for time slot booking appointment but we are not able to implement it.
+
+
+
+44.How will you improve performance of your project?
+to access data from multible table we can use stored procedure to minimize response time and  imporove performance of our project
+
+
+
+45.why did you select this technology?
+The main reason behind selecting SpringBoot was we were familiar with the syntax of JAVA and As Java is robust and 
+provides write once run anywhere feature ,we were able to work with this technology with ease.
+Also Database management was easy with the help of spring as it doesn't require feeding the data manually
+
+
+
+46.Dig: use Case, ER dig,class Dig, n-tier architecure, multi tier architecture
+47.mysql
+===============
+
+SUN::
+48.which advanced feature have you used in your project?
+password encryption, mail sending
+
+
+
+
+50.explain Agile module? scrum? sprint? jira? cloud? git?
+
+
+
+58.What was your role in your project and explain what you did in it?
+60.How will you deploye your project(on web server/client machine)?
+No
+
+
+
+69.how many web pages are presnt in your project?and in each module of your project?
+web pages: 31
+API : 61
+
+70.How did you implement look and feel of your web pages? how you used any framework and Why?
+Yes we have use bootstrap 4.6 to make user interface better. bcz its is simpler to used and 
+it provides readymade functionalities for making reponsive website.
+
+71.Have you used AJAX in your Project? How?
+No
+
+72.Explain configuration file used in your project?
+We use spring boot thats why all the configurations are in pom.xml file and database conection
+ and mail configuration in application.properties files.
+
+73.Explain Security of your project?
+No such security provided in our peoject but for accees functionality of user and doctor
+we provide authentication process including validation, email notifications and password encryption
+used in our project.
+
+
+
+74. explain latest version of techonology which is used in your project and why?
+Spring Tool Suite 4 Version: 4.9.0.RELEASE
+MySQL workbench 8.0
+
+=======================================================================
+
+
+Annotations in project ::
+1 @Controller  
+2.@Autowired
+3.@RequestMapping
+4.@Entity
+5.@ID
+6.@GetMapping
+7.@PostMapping
+8.@GeneratedValue(strategy = GenerationType.IDENTITY
+9.@Table(name = "appointment")
+10.@Column(nullable = false)
+11.@OneToMany
+   @JoinColumn(name = "ptId")
+12.@SpringBootApplication
+13.@Service
+15.@Transactional
+16.@Override 
+https://www.javatpoint.com/spring-boot-annotations
+
+
+
+
+dependency?
+1.spring-boot-starter-parent
+2.	spring-boot-starter-data-jpa
+Spring Boot provides spring-boot-starter-data-jpa dependency to 
+connect Spring application with relational database efficiently. 
+The spring-boot-starter-data-jpa internally uses the spring-boot-jpa dependency
+
+3.spring-boot-starter-web
+If we want to develop a web application, we need to add the following 
+dependency in pom.xml file:
+
+	4.spring-boot-devtools : server restart again and again
+		5.mysql-connector-java
+		6.spring-boot-starter-tomcat:
+		7.spring-boot-starter-test
+		8.tomcat-jasper
+		9.jstl
+		10.spring-boot-starter-mail
+		11.jbcrypt
+		12.spring-boot-maven-plugin
+
+ 
