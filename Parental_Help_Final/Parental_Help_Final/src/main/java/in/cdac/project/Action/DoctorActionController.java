@@ -1,5 +1,6 @@
 package in.cdac.project.Action;
 
+
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -31,21 +32,25 @@ public class DoctorActionController {
 	MailSenderService mailSenderService;
 
 	@PostMapping("/Drregistered")
-	public ModelAndView Doctregistered(String drName, String clName, String clAdd, String drSpec, String drGmail,
+	public ModelAndView Doctregistered(String drName, String clName, String clAdd, String drSpec, int drExperience, int drFees, String drGmail,
 			String drMobile, String drUsername, String drPassword) {
 		try {
 			// encrypt pass using hashPassword() method
 			ActionController actionController = new ActionController();
 			String encrpPassUser = actionController.hashPassword(drPassword);
 			
+			
 			ModelAndView mv = new ModelAndView("DrLogReg");
-			Doctors doctor = new Doctors(drName, clName, clAdd, drSpec, drGmail, drMobile, drUsername, encrpPassUser,
+			Doctors doctor = new Doctors(drName, clName, clAdd, drSpec, drExperience, drFees, drGmail, drMobile, drUsername, encrpPassUser,
 					false);
+			
+			
+			
 			doctorService.createDr(doctor);
 
 			mailSenderService.sendSimpleEmail(drGmail, "Dear Dr. " + drName+"," +"\n"+"\n"
-					+ "Congratulations! You have been registered successfully on BabyCare!! " +"\n" +"\n" +"Your login credentials are as follows:" +"\n"
-					+ "UserName : " + drName + "\n" +  "Password : " + drPassword + "\n" +"\n" +"\n" + "Best regards," +"\n"+ "BabyCare Team." +"\n"+"\n"
+					+ "Congratulations! You have been registered successfully on ParentalHelp!! " +"\n" +"\n" +"Your login credentials are as follows:" +"\n"
+					+ "UserName : " + drName + "\n" +  "Password : " + drPassword + "\n" +"\n" +"\n" + "Best regards," +"\n"+ "ParentalHelp Team." +"\n"+"\n"
 							+ "Note: This is a system generated e-mail, please do not reply to it.","Registration Successful!");
 			
 			mv.addObject("patReg", 1);
@@ -129,13 +134,13 @@ public class DoctorActionController {
 		
 		mailSenderService.sendSimpleEmail(email, "Dear " + name +"," +"\n"+"\n"+
 				"\n"+"Your appointment has been cancelled by Dr. "+ doc_name+"."+ "\n" +"\n"  + 
-				"Please contact Dr. "+ doc_name + " if any questions and keep me informed if there should be any changes."+ "\n" +"\n" +"\n" + "Best regards," +"\n"+ "BabyCare Team."+
+				"Please contact Dr. "+ doc_name + " if any questions and keep me informed if there should be any changes."+ "\n" +"\n" +"\n" + "Best regards," +"\n"+ "ParentalHelp Team."+
 				"\n" +"\n" +
 				"Note: This is a system generated e-mail, please do not reply to it.","Appointment Cancelled!");
 		
 		mailSenderService.sendSimpleEmail(Doc_mail, "Dear Dr. " + doc_name +"," +"\n"+"\n"+
 				"\n"+"Your appointment has been cancelled with "+name+"."+ "\n"  + 
-				"Please contact  "+name+ " if any questions and keep me informed if there should be any changes."+ "\n" +"\n" +"\n" + "Best regards," +"\n"+ "BabyCare Team."+
+				"Please contact  "+name+ " if any questions and keep me informed if there should be any changes."+ "\n" +"\n" +"\n" + "Best regards," +"\n"+ "ParentalHelp Team."+
 				"\n" +"\n" +
 				"Note: This is a system generated e-mail, please do not reply to it.","Appointment Cancelled!");
 		
@@ -178,13 +183,13 @@ public class DoctorActionController {
 	}
 
 	@GetMapping("/updateDr")
-	public ModelAndView updateDr(String id, String drName, String drSpec, String drEmail, String drMobile,
+	public ModelAndView updateDr(String id, String drName, String drSpec, int drExperience, int drFees, String drEmail, String drMobile,
 			String drUsername, String drPassword, String hspId) {
 		ActionController actionController = new ActionController();
 		String encrpPassUser = actionController.hashPassword(drPassword);
 
 		ModelAndView mv = new ModelAndView("doctorProfile");
-		Doctors doctor = doctorService.updateDr(id, drName, drSpec, drEmail, drMobile, drUsername, encrpPassUser,
+		Doctors doctor = doctorService.updateDr(id, drName, drSpec, drExperience, drFees, drEmail, drMobile, drUsername, encrpPassUser,
 				hspId);
 		mv.addObject("doctor", doctor);
 		mv.addObject("doctProfile", 1);
@@ -206,8 +211,8 @@ public class DoctorActionController {
 			
 			
 			mailSenderService.sendSimpleEmail(drEmail, "Dear " + drUsername +"," +"\n"+"\n"
-					+ "Congratulations! Your password has been updated sucessful on BabyCare!! " +"\n" +"\n" +"Your new login credentials are as follows:" +"\n"
-					+ "UserName : " + drUsername  + "\n" +  "Password : " + drPassword + "\n" +"\n" +"\n" + "Best regards," +"\n"+ "BabyCare Team." +"\n"+"\n"
+					+ "Congratulations! Your password has been updated sucessful on ParentalHelp!! " +"\n" +"\n" +"Your new login credentials are as follows:" +"\n"
+					+ "UserName : " + drUsername  + "\n" +  "Password : " + drPassword + "\n" +"\n" +"\n" + "Best regards," +"\n"+ "ParentalHelp Team." +"\n"+"\n"
 							+ "Note: This is a system generated e-mail, please do not reply to it.","Password Upadated!");
 			
 			mv.addObject("ptPassFail", 1);

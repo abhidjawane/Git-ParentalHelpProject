@@ -28,6 +28,12 @@ public class Doctors {
 
 	@Column(nullable = false)
 	private String drSpec;
+	
+	@Column(nullable = false)
+	private int drExperience;
+	
+	@Column(nullable = false)
+	private int drFees;
 
 	@Column(nullable = false, unique = true)
 	private String drEmail;
@@ -63,20 +69,24 @@ public class Doctors {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-
-	public Doctors(String drName, String clName,String clAdd, String drSpec, String drEmail, String drMobile, String drUsername,
-			String drPassword, boolean drStatus) {
+	
+	  public Doctors(String drName, String clName,String clAdd, String drSpec,int drExperience, int drFees,
+	  String drEmail, String drMobile, String drUsername, String drPassword,
+	  boolean drStatus) { 
 		super();
-		this.drName = drName;
+		this.drName = drName; 
 		this.clName = clName;
 		this.clAdd=clAdd;
-		this.drSpec = drSpec;
-		this.drEmail = drEmail;
-		this.drMobile = drMobile;
-		this.drUsername = drUsername;
+		this.drSpec = drSpec; 
+		this.drExperience = drExperience;
+		this.drFees = drFees;
+		this.drEmail = drEmail; 
+		this.drMobile = drMobile; 
+		this.drUsername = drUsername; 
 		this.drPassword = drPassword;
-		this.drStatus = drStatus;
-	}
+		this.drStatus = drStatus; 
+	  }
+	 
 
 	public int getDrId() {
 		return drId;
@@ -116,6 +126,22 @@ public class Doctors {
 
 	public void setDrSpec(String drSpec) {
 		this.drSpec = drSpec;
+	}
+
+	public int getDrExperience() {
+		return drExperience;
+	}
+
+	public void setDrExperience(int drExperience) {
+		this.drExperience = drExperience;
+	}
+
+	public int getDrFees() {
+		return drFees;
+	}
+
+	public void setDrFees(int drFees) {
+		this.drFees = drFees;
 	}
 
 	public String getDrEmail() {

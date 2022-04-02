@@ -11,15 +11,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import in.cdac.project.entity.BabyName;
-import in.cdac.project.service.BabyNameService;
-
 @Controller
 public class AdminActionController {
 
-	
-	@Autowired
-	BabyNameService babyNameService;
 	
 	@RequestMapping("/admin")
 	public ModelAndView AdminPage() {
@@ -33,10 +27,10 @@ public class AdminActionController {
 		String adminpassword = "Admin@123";
 		if ((adminusername.equals(admUsername)) && (adminpassword.equals(admPassword))) {
 			ModelAndView mv = new ModelAndView("babyname_list");
-			List<BabyName> babyname = babyNameService.getAllBabyName();
-			mv.addObject("babyname", babyname);
-			HttpSession httpSession = req.getSession();
-			httpSession.setAttribute("my-auth", 1);
+//			List<BabyName> babyname = babyNameService.getAllBabyName();
+//			mv.addObject("babyname", babyname);
+//			HttpSession httpSession = req.getSession();
+//			httpSession.setAttribute("my-auth", 1);
 			return mv;
 		
 

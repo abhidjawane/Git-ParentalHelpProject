@@ -69,7 +69,7 @@ public class DoctorsService {
 	}
 
 	// @PostMapping("/updateDr")
-	public Doctors updateDr(String id, String drName, String drSpec, String drEmail, String drMobile, String drUsername,
+	public Doctors updateDr(String id, String drName, String drSpec, int drExperience, int drFees, String drEmail, String drMobile, String drUsername,
 			String drPassword, String hspId) {
 		int drId = Integer.parseInt(id);
 		System.out.println(id);
@@ -78,6 +78,8 @@ public class DoctorsService {
 
 		doctor.setDrName(drName);
 		doctor.setDrSpec(drSpec);
+		doctor.setDrExperience(drExperience);
+		doctor.setDrFees(drFees);
 		doctor.setDrEmail(drEmail);
 		doctor.setDrMobile(drMobile);
 		doctor.setDrUsername(drUsername);

@@ -94,10 +94,7 @@
 
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 				<ul class="navbar-nav mr-auto">
-					<li class="navbar-band font-weight-bold ml-3 active"><a
-						class="nav-link" href="/babynamelist"><i
-							class="fas fa-baby "> BabyNames </i> <span class="sr-only"></span></a>
-					</li>
+					
 					<li class="nav-item active"><a
 						class="nav-link navbar-band font-weight-bold ml-3" href="/list"><i
 							class="fas fa-baby-carriage "> BabySitters</i> </a></li>
@@ -107,9 +104,7 @@
 					<li class="navbar-band font-weight-bold ml-3 active"><a
 						class="nav-link" href="/vaccinationlist"><i
 							class="fas fa-prescription-bottle-alt "> Vaccination</i></a></li>
-					<li class="navbar-band font-weight-bold ml-3 active"><a
-						class="nav-link" href="/inquirylist"><i
-							class="fas fa-envelope-square "> Inquiries</i></a></li>
+					
 
 				</ul>
 				<ul class="navbar-nav   justify-content-end">

@@ -105,6 +105,20 @@ if(session.getAttribute("my-auth")==null)
 						</div>
 
 						<div class="form-group">
+							Experience <input name="drExperience"
+								class="form-control form-control-sm" type="text"
+								value="${doctor.drExperience}" pattern="[1-2]{1,2}" required
+								autocomplete="off" title="only numbers are allowed" />
+						</div>
+
+						<div class="form-group">
+							Fees <input name="drFees"
+								class="form-control form-control-sm" type="text"
+								value="${doctor.drFees}" pattern="[0-9]" required
+								autocomplete="off" title="only numbers are allowed" />
+						</div>
+
+						<div class="form-group">
 							Email <input name="drEmail" class="form-control form-control-sm"
 								type="email" value="${doctor.drEmail}"
 								pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{3}$" required
