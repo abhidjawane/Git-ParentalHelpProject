@@ -85,8 +85,15 @@
 					<li class="navbar-band font-weight-bold ml-3 active"><a
 						class="nav-link" href="/vaccinationlist"><i
 							class="fas fa-prescription-bottle-alt "> Vaccination</i></a></li>
-					<li class="nav-item active"><a
-								class="nav-link navbar-band font-weight-bold ml-3" href="">Doctor</a></li>
+					<li class="nav-item active">
+					
+					<li class="navbar-band font-weight-bold ml-3 active"><a
+						class="nav-link" href="/doclist"><i
+							class="fas fa-fa fa-user-md "> Doctor</i></a></li>
+					<li class="nav-item active">
+					
+					
+			
 
 				</ul>
 				<ul class="navbar-nav   justify-content-end">

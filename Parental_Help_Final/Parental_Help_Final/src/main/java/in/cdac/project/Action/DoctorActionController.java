@@ -9,23 +9,28 @@ import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import in.cdac.project.ServiceImlemantation.AppointmentService;
-import in.cdac.project.ServiceImlemantation.DoctorsService;
+
 import in.cdac.project.ServiceImlemantation.MailSenderService;
 import in.cdac.project.ServiceImlemantation.UserService;
 import in.cdac.project.entity.Appointment;
+import in.cdac.project.entity.Babysitter;
 import in.cdac.project.entity.Doctors;
 import in.cdac.project.entity.User;
+import in.cdac.project.service.DoctorService;
 @Controller
 public class DoctorActionController {
 
 	@Autowired
 	UserService userService;
 	@Autowired
-	DoctorsService doctorService;
+	DoctorService doctorService;
 	@Autowired
 	AppointmentService appointmentService;
 	@Autowired
@@ -60,6 +65,8 @@ public class DoctorActionController {
 			return mv;
 		}
 	}
+	
+	
 
 	@PostMapping("/Authentdrlogin")
 	public ModelAndView AuthenticateDoctor(String drUsername, String drPassword,HttpServletRequest req,
@@ -222,5 +229,24 @@ public class DoctorActionController {
 		}
 
 	}
+	@RequestMapping(value = "/doclist" , method=RequestMethod.GET)
+	public ModelAndView list()
+	{
+		ModelAndView model = new ModelAndView("docterlist");
+		List<Doctors> articleList = doctorService.drList();
+		model.addObject("articleList", articleList);
+		return model;
+		
+	}
+
+	@RequestMapping(value = "/deletedoc/{id}", method = RequestMethod.GET)
+	public ModelAndView delete(@PathVariable("id") int id) {
+		doctorService.delete(id);
+
+		return new ModelAndView("redirect:/list");
+	}
+	
+	
+
 
 }

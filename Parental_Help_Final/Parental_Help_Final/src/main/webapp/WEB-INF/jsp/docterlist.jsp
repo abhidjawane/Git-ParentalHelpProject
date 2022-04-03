@@ -42,15 +42,15 @@ if (session.getAttribute("my-auth") == null) {
 	<div class="container">
 		<center>
 			<h2>
-				<i class="fas fa-baby-carriage text-black"> BabySitter</i>
+				<i class="fas fa-fa fa-user-md" style="font-size:36px text-Blue"> Doctor</i>
 			</h2>
 		</center>
 		<table class="table table-striped table-bordered bg-table">
 			<thead>
 
-				<th scope="row"><i class="fas fa-baby-carriage "> BabySitter Name</i></th>
+				<th scope="row"><i class="fas fa-fa fa-user-md "> Doctor Name</i></th>
 				
-				<th scope="row"><i class="fas fa-home "> Address</i></th>
+				<th scope="row"><i class="fas fa-envelope "> Email</i></th>
 				
 				<th scope="row"><i class="fas fa-phone-square-alt "> Mobile</i></th>
 				
@@ -58,41 +58,32 @@ if (session.getAttribute("my-auth") == null) {
 				
 				<th scope="row"><i class="fas fa-rupee-sign "> Fees</i></th>
 				
-				<th scope="row"><i class="fas fa-edit"> Update Action</i></th>
-				
 				<th scope="row"><i class="fas fa-trash-alt"> Delete Action</i></th>
 			</thead>
 			<tbody>
 				<c:forEach items="${articleList }" var="article">
 					<tr>
 
-						<td>${article.name }</td>
-						<td>${article.address }</td>
-						<td>${article.mobile }</td>
-						<td>${article.years }</td>
-						<td>${article.fees }</td>
-						<td><spring:url value="/updatebebysitter/${article.id }"
-								var="updateURL" /> <a class="btn btn-success"
-							href="${updateURL }" role="button"><i class="fas fa-edit">
-									Update</i></a></td>
-						<td><spring:url value="/deletebabysitter/${article.id }"
+						<td>${article.drName }</td>
+						<td>${article.drEmail }</td>
+						<td>${article.drMobile }</td>
+						<td>${article.drExperience }</td>
+						<td>${article. drFees }</td>
+					
+					
+					
+						<td><spring:url value="/deletedoc/${article.drId }"
 								var="deleteURL" /> <a class="btn btn-danger"
 							href="${deleteURL }" role="button"><i
-								class="fas fa-trash-alt"> Delete</i></a></td>
+								class="fas fa-trash-alt"> Delete</i></a>
+						</td>
 					</tr>
 				</c:forEach>
 			</tbody>
 			</div>
 
 
-			<div class="d-flex justify-content-sm-center">
-
-				<spring:url value="/addbabysitter" var="addURL" />
-
-				<a class="btn btn-primary btn-group-toggle active "
-					href="${addURL }" role="button"><i class="fas fa-sticky-note">
-						Add BabySitter</i><a>
-			</div>
+		
 			<br>
 		</table>
 </body>
