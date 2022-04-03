@@ -23,7 +23,7 @@
 					</c:if>
 			<h1><i class="fas fa-sign-in-alt"> Sign In</i></h1>			
 			<span>or use your account</span>
-			 <input id="username" name="admUsername"  class='lf--input' placeholder='Username' type='text'>
+			 <input id="username" name="admUsername"  class='lf--input' placeholder='Admin name' type='text'>
 			<input name="admPassword" id="password" class='lf--input' placeholder='Password' type='password'>
 			  <a href="/home"><i class="fas fa-chevron-circle-left fa-2x" ></i></a>
 			<button>Sign In</button>

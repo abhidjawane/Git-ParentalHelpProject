@@ -12,12 +12,13 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import in.cdac.project.ServiceImlemantation.AppointmentService;
-import in.cdac.project.ServiceImlemantation.DoctorsService;
+
 import in.cdac.project.ServiceImlemantation.MailSenderService;
 import in.cdac.project.ServiceImlemantation.UserService;
 import in.cdac.project.entity.Appointment;
 import in.cdac.project.entity.Doctors;
 import in.cdac.project.entity.User;
+import in.cdac.project.service.DoctorService;
 
 @Controller
 public class UserActionController {
@@ -25,7 +26,7 @@ public class UserActionController {
 	@Autowired
 	UserService userService;
 	@Autowired
-	DoctorsService doctorService;
+	DoctorService doctorService;
 	@Autowired
 	AppointmentService appointmentService;
 	@Autowired
