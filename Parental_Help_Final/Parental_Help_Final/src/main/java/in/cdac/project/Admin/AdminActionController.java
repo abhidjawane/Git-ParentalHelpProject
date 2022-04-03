@@ -27,7 +27,7 @@ public class AdminActionController {
 		String adminusername = "Admin";
 		String adminpassword = "Admin@123";
 		if ((adminusername.equals(admUsername)) && (adminpassword.equals(admPassword))) {
-			ModelAndView mv = new ModelAndView("babysitter_list");
+			
 
 			HttpSession httpSession = req.getSession();
 			httpSession.setAttribute("my-auth", 1);

@@ -70,7 +70,9 @@ if (session.getAttribute("my-auth") == null) {
 			</h2>
 		</center>
 		<br>
-		<div class="container">
+		
+	
+		<div class="container ml--30">
 			<div class="mx-auto">
 				<table class="table table-striped table-bordered  bg-table">
 					<tr>
@@ -133,6 +135,8 @@ if (session.getAttribute("my-auth") == null) {
 				</table>
 
 			</div>
+	
 		</div>
-</body>
+	
+	</body>
 </html>
