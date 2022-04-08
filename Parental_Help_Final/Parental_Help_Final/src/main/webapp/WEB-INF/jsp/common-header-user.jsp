@@ -38,7 +38,7 @@
 
 			<a class="navbar-band font-weight-bold ml-3" href="#"><img
 				style="border-radius: 50%; width: 50px; height: 50px;"
-				src="/images/babycare.jpg" /> </a>
+				src="/images/ph.jpg" /> </a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse"
 				data-target="#navbarCollapse" aria-controls="navbarCollapse"
 				aria-expanded="false" aria-label="Toggle navigation">
@@ -46,7 +46,16 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 
-				<form action="showUserProf" method="get">
+
+				<!-- <li class="nav-item active">
+					<a class="nav-link navbar-band font-weight-bold ml-3" href="/babysiterdetails"><i class="fas fa-baby-carriage "> BabySitters</i> </a>
+				  </li>
+				 
+				   <li class="navbar-band font-weight-bold ml-3 active">
+					<a class="nav-link" href="/vaccinationdetails"><i class="fas fa-prescription-bottle-alt "> Vaccination</i></a>
+				  </li> -->
+
+				  <form action="showUserProf" method="get">
 					<div>
 
 						<input type="hidden" name="ptid" value="${user.ptId}" readonly />
@@ -57,7 +66,27 @@
 					</div>
 				</form>
 
+				  <form action="babysiterdetails" method="get">
+					<div>
 
+						<input type="hidden" name="ptid" value="${user.ptId}" readonly />
+						<button class="btn btn-sm btn-white mr-3  text-white"
+							type="submit">
+							<i class="fas fa-baby-carriage "> BabySitters</i>
+						</button>
+					</div>
+				</form>
+				
+				<form action="vaccinationdetails" method="get">
+					<div>
+
+						<input type="hidden" name="ptid" value="${user.ptId}" readonly />
+						<button class="btn btn-sm btn-white mr-3  text-white"
+							type="submit">
+							<i class="fas fa-prescription-bottle-alt"> Vaccination</i>
+						</button>
+					</div>
+				</form>
 
 				<form action="update-opt" method="get">
 					<div>

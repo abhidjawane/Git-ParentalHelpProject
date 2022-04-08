@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,7 +14,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import in.cdac.project.ServiceImlemantation.BebySitterImplemantation;
+import in.cdac.project.ServiceImlemantation.UserService;
 import in.cdac.project.entity.Babysitter;
+import in.cdac.project.entity.User;
+import in.cdac.project.entity.Vaccination;
 import in.cdac.project.service.BabySitterService;
 @Controller
 public class BabySitterActionController {
@@ -22,7 +26,10 @@ public class BabySitterActionController {
 	BabySitterService babysitterService;
 	@Autowired
 	BebySitterImplemantation babyNameServiceImplimantation;
-
+	@Autowired
+	UserService userService;
+	
+	
 	// BabySitter Details
 
 	@RequestMapping("/babysitters")
@@ -32,24 +39,42 @@ public class BabySitterActionController {
 
 	}
 
-	@RequestMapping(value = "/babysiterdetailss", method = RequestMethod.GET)
-	public ModelAndView viewbBabysitterlist() {
-		ModelAndView model = new ModelAndView("babysitter_details");
-		List<Babysitter> articleList = babysitterService.getAllBebySitters();
-		model.addObject("articleList", articleList);
-
-		return model;
-	}
+//	@RequestMapping(value = "/babysiterdetailss", method = RequestMethod.GET)
+//	public ModelAndView viewbBabysitterlist() {
+//		ModelAndView model = new ModelAndView("babysitter_details");
+//		List<Babysitter> articleList = babysitterService.getAllBebySitters();
+//		model.addObject("articleList", articleList);
+//
+//		return model;
+//	}
+	
 
 	// searchbar list
-	@RequestMapping("/babysiterdetails")
-	public String viewHomePage(Model model, @Param("keyword") String keyword) {
-		List<Babysitter> Poollist = babyNameServiceImplimantation.listAll(keyword);
-		model.addAttribute("Poollist", Poollist);
-		model.addAttribute("keyword", keyword);
-
-		return "babysitter_details";
+//	@RequestMapping("/babysiterdetails")
+//	public String viewHomePage(Model model, @Param("keyword") String keyword) {
+//		List<Babysitter> Poollist = babyNameServiceImplimantation.listAll(keyword);
+//		model.addAttribute("Poollist", Poollist);
+//		model.addAttribute("keyword", keyword);
+//
+//		return "babysitter_details";
+//	}
+	
+	
+	
+	@GetMapping("/babysiterdetails")
+	public ModelAndView vaccinationdetailss(String ptid) {
+		User user = userService.getSingleUser(ptid);
+		List<Babysitter> Poollist = babyNameServiceImplimantation.listAll(ptid);
+		ModelAndView mv = new ModelAndView("babysitter_details");
+		mv.addObject("user", user);
+		mv.addObject("Poollist", Poollist);
+		return mv;
 	}
+	
+	
+	
+	
+	
 
 	@RequestMapping(value = "/list", method = RequestMethod.GET)
 	public ModelAndView list() {

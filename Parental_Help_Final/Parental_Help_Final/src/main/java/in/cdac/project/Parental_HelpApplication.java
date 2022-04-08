@@ -5,10 +5,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class Baby_CareApplication extends SpringBootServletInitializer {
+public class Parental_HelpApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Baby_CareApplication.class, args);
+		SpringApplication.run(Parental_HelpApplication.class, args);
 		
 		System.out.println("Setup is ready....!!!");
 	}

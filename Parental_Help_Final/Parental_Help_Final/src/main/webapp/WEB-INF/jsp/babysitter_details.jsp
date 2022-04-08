@@ -1,25 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@ include file="common-css-js.jsp"%>
-<jsp:include page="common-header.jsp"></jsp:include>
+<jsp:include page="common-header-user.jsp"></jsp:include>
+<%@ page import="java.util.*"%>
 <html>
 <style>
 seachbar {
 	border-style: solid;
 	border-color: #bbbbbb; /* grey */
 }
-.bg-image {
-	/* The image used */
-	background-image:
-		url("https://images.pexels.com/photos/1116050/pexels-photo-1116050.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	max-width: 100%;
-	height: auto;
-	/* Add the blur effect */
-	background-color: transparent;
-}
+
 
 .bg-table{
 	background-color: white;
@@ -28,33 +18,44 @@ seachbar {
 }
 
 </style>
+
+
+</head>
+<%
+/* response.setHeader("cache-control", "no-cache, no-store, must-revalidate");
+response.setHeader("pragma", "no-cache");
+response.setDateHeader("Expires", 0); */
+
+response.setHeader("Pragma","no-cache");
+response.setHeader("Cache-Control","no-store");
+response.setHeader("Expires","0");
+response.setDateHeader("Expires",-1);
+
+if(session.getAttribute("my-auth")==null)
+{
+	response.sendRedirect("http://localhost:8080/register");
+	return;
+}
+%>
+<script>
+    history.forward();
+</script>
+
+
+
 <body class="bg-image ">
 	<br>
 	<br>
 	<br>
 	<br>
 
-	<!--  
-	<div class="container">
-		<center>
-			<h2>BabySitter</h2>
-			<form th:action="@{/}">
-				Filter: <input type="text"  name="keyword" id="keyword" size="50"
-					th:value="${keyword}" required /> &nbsp; <input  class="btn btn-success" type="submit"
-					value="Search" /> &nbsp;
-				<button type="button" class="btn btn-default" >
-					<a href='babysiterdetails' role='button' id="button" type="button" class="btn btn-success">Clear</a>
-				</button>
-
-			</form>
-		</center>
--->
+	
 	<div class="container">
 		<center>
 			<h2>
-				<i class="fas fa-baby-carriage"> BabySitter</i>
+				<i style="background-color: white;" class="fas fa-baby-carriage"> BabySitter</i>
 			</h2>
-			<form th:action="@{/}">
+			<!-- <form th:action="@{/}">
 				<input type="text" name="keyword" id="keyword" size="50" 
 					class="seachbar " placeholder="Search" th:value="${keyword}"
 					required /> &nbsp;
@@ -62,17 +63,12 @@ seachbar {
 					<i class="fas fa-search"> Search</i>
 				</button>
 				&nbsp;
-				<!-- <button href='babysiterdetails'><i class="fas fa-sync-alt"> Clear</i></button> -->
-				<!-- <button type="button" class="btn btn-default">
-					<a href='babysiterdetails' role='button' id="button" type="button"
-						class="btn btn-success"><i class="fas fa-sync-alt"> Clear</i></a>
-				</button> -->
 				
 				<button type="button">
 					<a href='babysiterdetails' role='button' id="button" type="button"><i class="fas fa-sync-alt"> Clear</i></a>
 				</button>
 		</center>
-		</form>
+		</form> -->
 		<br>
 
 

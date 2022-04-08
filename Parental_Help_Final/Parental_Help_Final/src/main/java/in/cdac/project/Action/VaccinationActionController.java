@@ -6,13 +6,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import in.cdac.project.ServiceImlemantation.UserService;
 import in.cdac.project.ServiceImlemantation.VaccinationServiceImplemantation;
+import in.cdac.project.entity.Babysitter;
+import in.cdac.project.entity.User;
 import in.cdac.project.entity.Vaccination;
 import in.cdac.project.service.VaccinationService;
 @Controller
@@ -22,6 +26,8 @@ public class VaccinationActionController {
 	VaccinationServiceImplemantation vaccinationServiceImplemantation;
 	@Autowired
 	VaccinationService vaccinationService;
+	@Autowired
+	UserService userService;
 
 	// Vaccination Actions
 
@@ -34,15 +40,34 @@ public class VaccinationActionController {
 	}
 
 	// searchbar list
-	@RequestMapping("/vaccinationdetails")
-	public String vaccinationdetailss(Model model, @Param("keyword") String keyword) {
-		List<Vaccination> articleList = vaccinationServiceImplemantation.listAll(keyword);
-		model.addAttribute("articleList", articleList);
-		model.addAttribute("keyword", keyword);
+//	@RequestMapping("/vaccinationdetails")
+//	public String vaccinationdetailss(Model model, @Param("keyword") String keyword) {
+//		List<Vaccination> articleList = vaccinationServiceImplemantation.listAll(keyword);
+//		model.addAttribute("articleList", articleList);
+//		model.addAttribute("keyword", keyword);
+//
+//		return "vacination_details";
+//	}
 
-		return "vacination_details";
+	@GetMapping("/vaccinationdetails")
+	public ModelAndView vaccinationdetailss(String ptid) {
+		User user = userService.getSingleUser(ptid);
+		List<Vaccination> articleList = vaccinationServiceImplemantation.listAll(ptid);
+		ModelAndView mv = new ModelAndView("vacination_details");
+		mv.addObject("user", user);
+		mv.addObject("articleList", articleList);
+
+		return mv;
 	}
-
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	@RequestMapping(value = "/vaccinationlist", method = RequestMethod.GET)
 	public ModelAndView Vaccinationlist() {
 		ModelAndView model = new ModelAndView("vacination_list");

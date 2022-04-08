@@ -43,7 +43,7 @@ if (session.getAttribute("my-auth") == null) {
 	<div class="container">
 		<center>
 			<h2>
-				<i class="fas fa-prescription-bottle-alt text-black"> Vaccination Details</i>
+				<i  style="background-color: white;"  class="fas fa-prescription-bottle-alt text-black"> Vaccination Details  .</i>
 			</h2>
 		</center>
 		<div class="container" id="babaydetails">

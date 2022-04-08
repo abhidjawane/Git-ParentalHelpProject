@@ -46,8 +46,8 @@ public class UserActionController {
 			userService.create(user);
 
 			mailSenderService.sendSimpleEmail(ptGmail, "Dear " + ptName +"," +"\n"+"\n"
-					+ "Congratulations! You have been registered successfully on BabyCare!! " +"\n" +"\n" +"Your login credentials are as follows:" +"\n"
-					+ "UserName : " + ptUsername + "\n" +  "Password : " + ptPassword + "\n" +"\n" +"\n" + "Best regards," +"\n"+ "BabyCare Team." +"\n"+"\n"
+					+ "Congratulations! You have been registered successfully on ParentalHelp!! " +"\n" +"\n" +"Your login credentials are as follows:" +"\n"
+					+ "UserName : " + ptUsername + "\n" +  "Password : " + ptPassword + "\n" +"\n" +"\n" + "Best regards," +"\n"+ "ParentalHelp Team." +"\n"+"\n"
 							+ "Note: This is a system generated e-mail, please do not reply to it.","Registration Successful!");
 			mv.addObject("patReg", 1);
 			return mv;
@@ -128,14 +128,14 @@ public class UserActionController {
 		
 		mailSenderService.sendSimpleEmail(email, "Dear " + name +"," +"\n"+"\n"+
 				"Thank You " + name +"." +"\n"+"You have successfully scheduled an appointment with Dr. "+ doc_name+"."+ "\n" +"\n"  + 
-				"Please contact "+ doc_name + " if any questions and keep me informed if there should be any changes."+ "\n" +"\n" +"\n" + "Best regards," +"\n"+ "BabyCare Team."+
+				"Please contact "+ doc_name + " if any questions and keep me informed if there should be any changes."+ "\n" +"\n" +"\n" + "Best regards," +"\n"+ "ParentalHelp Team."+
 				"\n" +"\n" +
 				"Note: This is a system generated e-mail, please do not reply to it.","Appointment Successful!");
 	
 		
 		mailSenderService.sendSimpleEmail(Doc_mail, "Dear Dr. " + doc_name +"," +"\n"+"\n"+
 				"\n"+"You have an appointment with "+name+"."+ "\n"  + 
-				"Please contact "+name+ " if any questions and keep me informed if there should be any changes."+ "\n" +"\n" +"\n" + "Best regards," +"\n"+ "BabyCare Team."+
+				"Please contact "+name+ " if any questions and keep me informed if there should be any changes."+ "\n" +"\n" +"\n" + "Best regards," +"\n"+ "ParentalHelp Team."+
 				"\n" +"\n" +
 				"Note: This is a system generated e-mail, please do not reply to it.","Appointment Successful!");
 		
@@ -173,8 +173,8 @@ public class UserActionController {
 			 * "Password updated Successfull...!!!");
 			 */
 			mailSenderService.sendSimpleEmail(ptGmail, "Dear " + ptUsername +"," +"\n"+"\n"
-					+ "Congratulations! Your password has been updated sucessful on BabyCare!! " +"\n" +"\n" +"Your new login credentials are as follows:" +"\n"
-					+ "UserName : " + ptUsername + "\n" +  "Password : " + ptPassword + "\n" +"\n" +"\n" + "Best regards," +"\n"+ "BabyCare Team." +"\n"+"\n"
+					+ "Congratulations! Your password has been updated sucessful on ParentalHelp!! " +"\n" +"\n" +"Your new login credentials are as follows:" +"\n"
+					+ "UserName : " + ptUsername + "\n" +  "Password : " + ptPassword + "\n" +"\n" +"\n" + "Best regards," +"\n"+ "ParentalHelp Team." +"\n"+"\n"
 							+ "Note: This is a system generated e-mail, please do not reply to it.","Password Upadated!");
 			mv.addObject("patReg", 1);
 			mv.addObject("ptPassFail", 1);
@@ -211,13 +211,13 @@ public class UserActionController {
 	
 		mailSenderService.sendSimpleEmail(email, "Dear " + name +"," +"\n"+"\n"+
 				"\n"+"Your appointment has been cancelled with Dr. "+ doc_name+"."+ "\n" +"\n"  + 
-				"Please contact Dr. "+ doc_name + " if any questions and keep me informed if there should be any changes."+ "\n" +"\n" +"\n" + "Best regards," +"\n"+ "BabyCare Team."+
+				"Please contact Dr. "+ doc_name + " if any questions and keep me informed if there should be any changes."+ "\n" +"\n" +"\n" + "Best regards," +"\n"+ "ParentalHelp Team."+
 				"\n" +"\n" +
 				"Note: This is a system generated e-mail, please do not reply to it.","Appointment Cancelled!");
 		
 		mailSenderService.sendSimpleEmail(Doc_mail, "Dear Dr. " + doc_name +"," +"\n"+"\n"+
 				"\n"+"Your appointment has been cancelled with "+name+"."+ "\n"  + 
-				"Please contact  "+name+ " if any questions and keep me informed if there should be any changes."+ "\n" +"\n" +"\n" + "Best regards," +"\n"+ "BabyCare Team."+
+				"Please contact  "+name+ " if any questions and keep me informed if there should be any changes."+ "\n" +"\n" +"\n" + "Best regards," +"\n"+ "ParentalHelp Team."+
 				"\n" +"\n" +
 				"Note: This is a system generated e-mail, please do not reply to it.","Appointment Cancelled!");
 		

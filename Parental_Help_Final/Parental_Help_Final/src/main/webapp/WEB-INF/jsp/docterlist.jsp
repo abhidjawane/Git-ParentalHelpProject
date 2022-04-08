@@ -42,7 +42,7 @@ if (session.getAttribute("my-auth") == null) {
 	<div class="container">
 		<center>
 			<h2>
-				<i class="fas fa-fa fa-user-md" style="font-size:36px text-Blue"> Doctor</i>
+				<i style="background-color: white;" class="fas fa-fa fa-user-md" style="font-size:36px text-Blue">  Doctor .</i>
 			</h2>
 		</center>
 		<table class="table table-striped table-bordered bg-table">

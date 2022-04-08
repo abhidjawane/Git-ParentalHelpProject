@@ -25,24 +25,25 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
 
-        <li class="nav-item active">
-          <a class="nav-link navbar-band font-weight-bold ml-3" href="/babysiterdetails"><i class="fas fa-baby-carriage "> BabySitters</i> </a>
-        </li>
-       
-         <li class="navbar-band font-weight-bold ml-3 active">
-          <a class="nav-link" href="/vaccinationdetails"><i class="fas fa-prescription-bottle-alt "> Vaccination</i></a>
-        </li>
         
-         <li class="nav-item dropdown active">
-        <a class="nav-link navbar-band font-weight-bold ml-3 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-         <i class="fas fa-feather-alt "> Others</i>
+        <li class="nav-item active">
+					<a class="nav-link navbar-band font-weight-bold ml-3"href="/food"><i class="fas fa-utensils "> Baby Foods</i> </a>
+				</li>
+
+        <li class="nav-item active">
+          <a class="nav-link navbar-band font-weight-bold ml-3"href="/tips"><i class="fas fa-notes-medical"> Health Tips</i></a>
+        </li>
+
+        <li class="nav-item active">
+          <a class="nav-link navbar-band font-weight-bold ml-3" href="/product"><i class="fas fa-shopping-cart "> HealthCare Products</i></a>
+        </li>
+
+        <li class="nav-item dropdown active">
+          <a class="nav-link navbar-band font-weight-bold ml-3 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fas fa-feather-alt "> Others</i>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="/food"><i class="fas fa-utensils "> Baby Foods</i> </a>
-          <a class="dropdown-item" href="/tips"><i class="fas fa-notes-medical"> Health Tips</i></a>
           <a class="dropdown-item" href="/mustwatch"><i class="fab fa-youtube "><b> Must Watch </b> </i></a>
-          <a class="dropdown-item" href="/product"><i class="fas fa-shopping-cart "> HealthCare Products</i></a>
-          <div class="dropdown-divider"></div>
         </div>
       </li>
       </ul>

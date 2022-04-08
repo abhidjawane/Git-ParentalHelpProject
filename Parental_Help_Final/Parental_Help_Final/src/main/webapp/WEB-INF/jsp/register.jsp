@@ -7,7 +7,7 @@
 <head>
 
 <meta charset="ISO-8859-1">
-<img src="/images/ph.jpg" rel="shortcut icon"/>
+<link href="images/babycare.jpg" rel="shortcut icon"/>
 <title> User Sign In</title>
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
@@ -20,9 +20,9 @@
 			
 			<h1>Create Account</h1>
 			
-			<input type="text" name="ptName" placeholder="Name" pattern="[A-Za-z\s]{1,40}"  required autocomplete="off" title="Only characters are allowed.."/>
-			<input type="number" name="age" placeholder="Age" Pattern= "[0-9]{1,2}" required autocomplete="off" title="Age must be number.."/>
-			<input type="email" name="ptGmail" placeholder="Email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{3}$" required autocomplete="off" title="Enter valid email.."/>
+			<input type="text" name="ptName" placeholder="Parent Name" pattern="[A-Za-z\s]{1,40}"  required autocomplete="off" title="Only characters are allowed.."/>
+			<input type="number" name="age" placeholder="Child Age" Pattern= "[1-9]{1}" required autocomplete="off" title="Age must be number and between 1 to 9 year.."/>
+			<input type="email" name="ptGmail" placeholder="Email Id"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{3}$" required autocomplete="off" title="Enter valid email.."/>
 			<input type="number" name="ptMobile" placeholder="Phone No" Pattern= "[789][0-9]{9}" required autocomplete="off" title="Mobile number should be 10 digit.."/>
 			<input type="text" name="ptUsername" placeholder="UserName"  pattern="[A-Za-z0-9]{1,15}"required autocomplete="off" title="Username only contains characters & numbers.."/>
 			<input type="password" name="ptPassword" placeholder="Password"  pattern="[A-Za-z0-9]{1,10}"required autocomplete="off" title="Password only contains characters & numbers.."/>

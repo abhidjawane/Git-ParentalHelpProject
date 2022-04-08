@@ -237,7 +237,7 @@
 
 			<center>
 				<h2 class="featurette-heading">
-					Team20 <span class="text-muted"><br>
+					<span class="text-muted"><br>
 						<h6><i><br>"The future belongs to those who <br> believe in the beauty of their dreams"</i></h6></span>
 				</h2>
 
@@ -245,124 +245,13 @@
 				<br>
 			</center>
 
-			<!-- 
-			<div class="card-columns">
-				<div class="card p-3">
-					<img src="images/Team20/Swapnil.jpg" class="card-img-top "
-						alt="..." >
-					<div class="card-body">
-					<br>
-						<h5 class="card-title">Swapnil Supekar</h5>
-						
-						<p class="card-text"></p>
-					</div>
-				</div>
-				<div class="card p-3">
-					<img src="images/Team20/vikash.jpg" class="card-img-top " alt="...">
-					<div class="card-body">
-						<h5 class="card-title">Ekta Walavalkar</h5>
-						<p class="card-text">.</p>
-					</div>
-				</div>
-				<div class="card p-3">
-					<img src="images/Team20/Ekta.jpg" class="card-img-top " alt="..."
-						>
-					<div class="card-body">
-						<h5 class="card-title">Vikash Shukla</h5>
-						<p class="card-text"></p>
-					</div>
-				</div>
-				<div class="card p-3">
-					<img src="images/Team20/shubham.jpg" class="card-img-top "
-						alt="..." >
-					<div class="card-body">
-						<h5 class="card-title">Shubham Dhawle</h5>
-						<p class="card-text"></p>
-					</div>
-				</div>
-				<div class="card p-3">
-					<img src="images/Team20/kamlesh.JPG" class="card-img-top " alt="..."
-						>
-					<div class="card-body">
-					<br>
-						<h5 class="card-title">Shital Patil</h5>
-						<p class="card-text"></p>
-					</div>
-				</div>
-				<div class="card p-3">
-					<img src="images/Team20/shital.jpg" class="card-img-top "
-						alt="...">
-					<div class="card-body">
-					<br>
-						<h5 class="card-title">Kamlesh Singh</h5>
-						<p class="card-text"></p>
-					</div>
-				</div> -->
-
-			<!-- abve cool -->
-			<!--  <div class="card p-3">
-    <blockquote class="blockquote mb-0 card-body">
-      <p>A well-known quote, contained in a blockquote element.</p>
-      <footer class="blockquote-footer">
-        <small class="text-muted">
-          Someone famous in <cite title="Source Title">Source Title</cite>
-        </small>
-      </footer>
-    </blockquote>
-  </div>
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div class="card bg-primary text-white text-center p-3">
-    <blockquote class="blockquote mb-0">
-      <p>Our Team,Our Journey</p>
-      <footer class="blockquote-footer text-white">
-        <small>
-          Someone famous in <cite title="Source Title">Source Title</cite>
-        </small>
-      </footer>
-    </blockquote>
-  </div>
-  <div class="card text-center">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div class="card">
-    <img src="images/Team20/kamlesh.JPG" class="card-img" alt="...">
-  </div>
-  <div class="card p-3 text-right">
-    <blockquote class="blockquote mb-0">
-      <p>A well-known quote, contained in a blockquote element.</p>
-      <footer class="blockquote-footer">
-        <small class="text-muted">
-          Someone famous in <cite title="Source Title">Source Title</cite>
-        </small>
-      </footer>
-    </blockquote>
-  </div>
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-</div> -->
 
 
 			<!-- Round val bT -->
-			<div class="row">
-				<div class="col-lg-2">
+			<!-- <div class="row">
+				<div class="col-lg-3">
 					<img class="bd-placeholder-img rounded-circle" width="140"
-						height="140" src="images/Team20/shital.jpg" role="img"
+						height="140" src="" role="img"
 						aria-label="Placeholder: 140x140"
 						preserveAspectRatio="xMidYMid slice" focusable="false">
 					<title>Placeholder</title>
@@ -371,15 +260,15 @@
 					</img>
 
 					<h6>
-						<b>&nbsp; &nbsp;&nbsp; &nbsp;Shital Patil</b>
+						<b>&nbsp; &nbsp;&nbsp; &nbsp;Aditya Kadam</b>
 					</h6>
-					<p>&nbsp; &nbsp;200940381094</p>
+					<p>&nbsp; &nbsp;210943120006</p>
 
-				</div>
+				</div> -->
 				<!-- /.col-lg-2 -->
-				<div class="col-lg-2">
+				<!-- <div class="col-lg-3">
 					<img class="bd-placeholder-img rounded-circle" width="140"
-						height="140" src="images/Team20/vikash.jpg" role="img"
+						height="140" src="" role="img"
 						aria-label="Placeholder: 140x140"
 						preserveAspectRatio="xMidYMid slice" focusable="false">
 					<title>Placeholder</title>
@@ -388,15 +277,15 @@
 					</img>
 
 					<h6>
-						<b>&nbsp; &nbsp;Vikash Shukla</b>
+						<b>&nbsp; &nbsp;Abhishek Jawane</b>
 					</h6>
-					<p>&nbsp; &nbsp;200940381129</p>
+					<p>&nbsp; &nbsp;210943120035</p>
 
-				</div>
+				</div> -->
 				<!-- /.col-lg-4 -->
-				<div class="col-lg-2">
+				<!-- <div class="col-lg-3">
 					<img class="bd-placeholder-img rounded-circle" width="140"
-						height="140" src="images/Team20/Swapnil.jpg" role="img"
+						height="140" src="" role="img"
 						aria-label="Placeholder: 140x140"
 						preserveAspectRatio="xMidYMid slice" focusable="false">
 					<title>Placeholder</title>
@@ -404,16 +293,16 @@
 					<text x="50%" y="50%" fill="#777" dy=".3em"></text>
 					</img> <br>
 					<h6>
-						<b>&nbsp; &nbsp;Swapnil Supekar</b>
+						<b>&nbsp; &nbsp;Lalit Khomane</b>
 					</h6>
-					<p>&nbsp; &nbsp;200940381118</p>
+					<p>&nbsp; &nbsp;210943120049</p>
 
-				</div>
+				</div> -->
 				<!-- /.col-lg-4 -->
 				<!--  next 3-->
-				<div class="col-lg-2">
+				<!-- <div class="col-lg-3">
 					<img class="bd-placeholder-img rounded-circle" width="140"
-						height="140" src="images/Team20/Ekta.jpg" role="img"
+						height="140" src="" role="img"
 						aria-label="Placeholder: 140x140"
 						preserveAspectRatio="xMidYMid slice" focusable="false">
 					<title>Placeholder</title>
@@ -422,62 +311,17 @@
 					</img>
 
 					<h6>
-						<b>&nbsp; &nbsp;Ekta Walavalkar</b>
+						<b>&nbsp; &nbsp;Vrushabh Vaidya</b>
 					</h6>
-					<p>&nbsp; &nbsp;200940581006</p>
+					<p>&nbsp; &nbsp;210943120116</p>
 
-				</div>
-				<!-- /.col-lg-2 -->
-				<div class="col-lg-2">
-					<img class="bd-placeholder-img rounded-circle" width="140"
-						height="140" src="images/Team20/shubham.jpg" role="img"
-						aria-label="Placeholder: 140x140"
-						preserveAspectRatio="xMidYMid slice" focusable="false">
-					<title>Placeholder</title>
-					<rect width="100%" height="100%" fill="#777"></rect>
-					<text x="50%" y="50%" fill="#777" dy=".3em"></text>
-					</img>
-
-					<h6>
-						<b>Shubham Dhawale</b>
-					</h6>
-					<p>&nbsp; &nbsp;200940381099</p>
-				</div>
-				<!-- /.col-lg-4 -->
-				<div class="col-lg-2">
-					<img class="bd-placeholder-img rounded-circle" width="140"
-						height="140" src="images/Team20/kamlesh.JPG" role="img"
-						aria-label="Placeholder: 140x140"
-						preserveAspectRatio="xMidYMid slice" focusable="false">
-					<title>Placeholder</title>
-					<rect width="100%" height="100%" fill="#777"></rect>
-					<text x="50%" y="50%" fill="#777" dy=".3em"></text>
-					</img>
-
-					<h6>
-						<b>&nbsp; &nbsp;Kamlesh Singh</b>
-					</h6>
-					<p>&nbsp; &nbsp;200940381036</p>
-
-				</div>
-				<!-- /.col-lg-4 -->
-
+				</div> -->
+				
 			</div>
 
 
 		</div>
 		<hr class="featurette-divider">
-		<!-- /.container -->
-
-
-		<!-- FOOTER -->
-		<!-- 		<footer class="container">
-			<p class="float-right">
-				<a href="#">Back to top</a>
-			</p>
-			<p>Copyright Â© 2021 CDAC,Mumbai. All rights reserved | Designed
-				by Team20. Design For U</p>
-		</footer> -->
 
 		<div class="container-fluid bg-primary py-3">
 			<div class="container">
@@ -486,47 +330,14 @@
 					
 <center>
 <div class="d-inline-block">
-							<div class="bg-circle-outline d-inline-block">
-								<a href="https://www.facebook.com/cdacmumbai" class="text-white"><i
-									class="fab fa-facebook-square fa-lg"></i> </a>
-							</div>
-
-							<div class="bg-circle-outline d-inline-block">
-								<a href="https://www.instagram.com/dac_cdacmumbai/"
-									class="text-white"> <i class="fab fa-instagram fa-lg"></i></a>
-							</div>
-							<div class="bg-circle-outline d-inline-block">
-								<a href="https://twitter.com/cdacindia?s=09" class="text-white"> <i
-									class="fab fa-twitter-square fa-lg"></i></a>
-							</div>
-							<div class="bg-circle-outline d-inline-block">
-								<a href="https://www.linkedin.com/in/c-dac-mumbai-4b26111ba/"
-									class="text-white"> <i class="fab fa-linkedin-in fa-lg"></i></a>
-							</div>
-						<p class="text-white">Copyright © 2021 CDAC,Mumbai. All rights
-							reserved | Designed by Team20. Design For U</p>
+							
+						<p class="text-white">Copyright -2022. All rights
+							reserved | Designed by Infoway Student. Design For U</p>
 						
 					</div>
 	</center>
 					<div class="col-md-3">
-						<<!-- div class="d-inline-block">
-							<div class="bg-circle-outline d-inline-block">
-								<a href="https://www.facebook.com/cdacmumbai" class="text-white"><i
-									class="fab fa-facebook-square fa-2x"></i> </a>
-							</div>
-
-							<div class="bg-circle-outline d-inline-block">
-								<a href="https://www.instagram.com/dac_cdacmumbai/"
-									class="text-white"> <i class="fab fa-instagram fa-2x"></i></a>
-							</div>
-							<div class="bg-circle-outline d-inline-block">
-								<a href="#" class="text-white"> <i
-									class="fab fa-twitter-square fa-2x"></i></a>
-							</div>
-							<div class="bg-circle-outline d-inline-block">
-								<a href="https://www.linkedin.com/in/c-dac-mumbai-4b26111ba/"
-									class="text-white"> <i class="fab fa-linkedin-in fa-2x"></i></a>
-							</div> -->
+						
 						</div>
 					</div>
 				</div>

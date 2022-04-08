@@ -1,7 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@ include file="common-css-js.jsp"%>
-<jsp:include page="common-header.jsp"></jsp:include>
+<jsp:include page="common-header-user.jsp"></jsp:include>
+<%@ page import="java.util.*"%>
 <html>
 
 <style>
@@ -9,18 +10,7 @@ seachbar {
 	border-style: solid;
 	border-color: #bbbbbb; /* grey */
 }
-.bg-image{
-	/* The image used */
-	background-image:
-		url("https://images.unsplash.com/photo-1615631648086-325025c9e51e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	max-width: 100%;
-	height: auto;
-	/* Add the blur effect */
-	background-color: transparent;
-}
+
 
 .bg-table{
 	background-color: white;
@@ -29,6 +19,29 @@ seachbar {
 }
 
 </style>
+
+</head>
+<%
+/* response.setHeader("cache-control", "no-cache, no-store, must-revalidate");
+response.setHeader("pragma", "no-cache");
+response.setDateHeader("Expires", 0); */
+
+response.setHeader("Pragma","no-cache");
+response.setHeader("Cache-Control","no-store");
+response.setHeader("Expires","0");
+response.setDateHeader("Expires",-1);
+
+if(session.getAttribute("my-auth")==null)
+{
+	response.sendRedirect("http://localhost:8080/register");
+	return;
+}
+%>
+<script>
+    history.forward();
+</script>
+
+
 <body class="bg-image">
 	<br>
 	<br>
@@ -41,7 +54,7 @@ seachbar {
 			<h2>
 				<i class="fas fa-prescription-bottle-alt text "> Vaccination Details</i>
 			</h2>
-			<form th:action="@{/}">
+			<!-- <form th:action="@{/}">
 				<input type="text" name="keyword" id="keyword" size="50"
 					class="seachbar" placeholder="Search" th:value="${keyword}"
 					required /> &nbsp;
@@ -56,7 +69,7 @@ seachbar {
 						type="button"><i class="fas fa-sync-alt"> Clear</i></a>
 				</button>
 
-			</form>
+			</form> -->
 		</center>
 		<br>
 
