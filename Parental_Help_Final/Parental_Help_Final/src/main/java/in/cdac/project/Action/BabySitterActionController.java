@@ -71,11 +71,6 @@ public class BabySitterActionController {
 		return mv;
 	}
 	
-	
-	
-	
-	
-
 	@RequestMapping(value = "/list", method = RequestMethod.GET)
 	public ModelAndView list() {
 		ModelAndView model = new ModelAndView("babysitter_list");
@@ -89,7 +84,6 @@ public class BabySitterActionController {
 	public ModelAndView save(@ModelAttribute("articleForm") Babysitter article) {
 		babysitterService.saveOrUpdate(article);
 		return new ModelAndView("redirect:/list");
-
 	}
 
 	@RequestMapping(value = "/addbabysitter", method = RequestMethod.GET)
