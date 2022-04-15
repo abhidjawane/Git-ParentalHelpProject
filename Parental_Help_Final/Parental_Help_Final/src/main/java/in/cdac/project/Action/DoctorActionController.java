@@ -246,7 +246,5 @@ public class DoctorActionController {
 		return new ModelAndView("redirect:/list");
 	}
 	
-	
-
 
 }
